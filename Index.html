@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loan Calculator - SmartFinanceTools</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 400px;
+}
+h2 { text-align: center; color: #2c3e50; }
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover { background-color: #2980b9; }
+.result { margin-top: 15px; padding: 12px; background: #ecf0f1; border-radius: 6px; text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2>Loan Calculator</h2>
+<input type="number" id="loanAmount" placeholder="Loan Amount ($)">
+<input type="number" id="interestRate" placeholder="Annual Interest Rate (%)">
+<input type="number" id="loanTerm" placeholder="Loan Term (years)">
+<button onclick="calculateLoan()">Calculate</button>
+<div class="result" id="result"></div>
+</div>
+
+<script>
+function calculateLoan() {
+    let P = parseFloat(document.getElementById('loanAmount').value);
+    let r = parseFloat(document.getElementById('interestRate').value) / 100 / 12;
+    let n = parseFloat(document.getElementById('loanTerm').value) * 12;
+
+    if(!P || !r || !n) {
+        document.getElementById('result').innerHTML = "Please fill all fields!";
+        return;
+    }
+
+    let EMI = (P * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+    document.getElementById('result').innerHTML = "Monthly Payment: $" + EMI.toFixed(2);
+}
+</script>
+
+</body>
+</html>
