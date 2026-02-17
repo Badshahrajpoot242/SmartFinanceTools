@@ -27,13 +27,13 @@
         button.calc-btn:hover { background: #1e429f; transform: translateY(-1px); }
         .result-display { margin-top: 25px; padding: 20px; background: #f0f9ff; border-radius: 12px; text-align: center; border: 1px solid #bae6fd; }
         .result-display h3 { margin: 5px 0 0 0; color: var(--primary); font-size: 2.2rem; }
-        .quran-promo { background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1584281723573-f925186b514c?auto=format&fit=crop&q=80&w=1000'); background-size: cover; color: white; padding: 45px 20px; border-radius: 24px; text-align: center; margin: 40px 0; border: 2px solid var(--yt-gold); }
+        .quran-promo { background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1584281723573-f925186b514c?auto=format&fit=crop&q=80&w=1000'); background-size: cover; color: white; padding: 45px 20px; border-radius: 24px; text-align: center; margin: 40px 0; border: 2px solid var(--yt-gold); }
         .quran-promo h2 { color: var(--yt-gold); margin-top: 0; font-size: 1.8rem; }
         .yt-link { display: inline-block; background: #ff0000; color: white; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 20px; transition: 0.3s; box-shadow: 0 4px 15px rgba(255,0,0,0.3); }
+        .yt-link:hover { transform: scale(1.05); background: #cc0000; }
         footer { background: var(--dark); color: #94a3b8; padding: 60px 20px; text-align: center; margin-top: 60px; }
         .footer-links { margin-bottom: 25px; }
-        .footer-links a { color: #f3f4f6; margin: 0 12px; text-decoration: none; font-size: 0.9rem; cursor: pointer; transition: 0.3s; border-bottom: 1px solid transparent; }
-        .footer-links a:hover { color: var(--primary); border-bottom-color: var(--primary); }
+        .footer-links a { color: #f3f4f6; margin: 0 12px; text-decoration: none; font-size: 0.9rem; cursor: pointer; transition: 0.3s; }
     </style>
 </head>
 <body>
@@ -87,7 +87,7 @@
         <div id="privacy" class="card">
             <h2>Privacy & Data Security</h2>
             <p>We take your privacy seriously. Smart Finance Hub is a client-side platform, meaning all your financial data stays on your device. We do not store, collect, or transmit any personal financial information entered into our calculators.</p>
-            <p>We use Google AdSense to show relevant advertisements, which may use cookies to enhance your browsing experience. By using our site, you agree to our standard cookie policy.</p>
+            <p>We use Google AdSense to show relevant advertisements, which may use cookies to enhance your browsing experience.</p>
         </div>
 
         <div id="disclaimer" class="card">
@@ -99,14 +99,14 @@
         <div class="quran-promo">
             <h2>Noor Al Quloob</h2>
             <p>Beautiful Quran Tilawat for spiritual healing and peace of heart. Join our community of over 1.1M viewers.</p>
-            <a href="https://www.youtube.com/@NoorAlQuloob" target="_blank" class="yt-link">Watch on YouTube</a>
+            <a href="https://www.youtube.com/@NooralQuloob-1.1MViews" target="_blank" class="yt-link">Watch on YouTube</a>
         </div>
     </div>
 
     <footer>
         <div class="footer-links">
-            <a onclick="showSection('about')">About Us</a>
-            <a onclick="showSection('privacy')">Privacy Policy</a>
+            <a onclick="showSection('about')">About Us</a> | 
+            <a onclick="showSection('privacy')">Privacy Policy</a> | 
             <a onclick="showSection('disclaimer')">Disclaimer</a>
         </div>
         <p>© 2026 Smart Finance Hub | Sultan Prince Official</p>
