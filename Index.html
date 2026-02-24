@@ -3,108 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Finance Hub - US Mortgage & Auto Loan Calculators</title>
+    <title>Smart Finance Hub - All Financial Tools</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; color: white; margin: 0; padding: 20px; scroll-behavior: smooth; }
-        .container { max-width: 850px; margin: auto; background: #1e293b; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        .header { text-align: center; margin-bottom: 30px; }
+        .container { max-width: 900px; margin: auto; background: #1e293b; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         .nav-menu { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 30px; }
-        .nav-btn { background: #334155; color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; transition: 0.3s; font-size: 14px; font-weight: 600; }
-        .nav-btn:hover { background: #2563eb; transform: translateY(-2px); }
+        .nav-btn { background: #334155; color: white; border: none; padding: 10px 15px; border-radius: 20px; cursor: pointer; font-size: 13px; transition: 0.3s; }
+        .nav-btn:hover { background: #2563eb; }
         .card { background: white; color: #333; padding: 25px; border-radius: 12px; margin-bottom: 30px; border-left: 5px solid #2563eb; }
-        h2 { color: #1e293b; margin-top: 0; }
-        label { display: block; margin-top: 15px; font-weight: bold; font-size: 12px; color: #64748b; }
-        input { width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; font-size: 16px; }
-        button.calc-btn { width: 100%; background: #2563eb; color: white; border: none; padding: 15px; border-radius: 6px; cursor: pointer; font-weight: bold; margin-top: 20px; transition: 0.2s; }
-        button.calc-btn:hover { background: #1d4ed8; }
-        .result { margin-top: 20px; padding: 20px; background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; text-align: center; color: #1e40af; font-size: 1.4em; font-weight: 800; }
-        .info-section { padding: 20px; color: #475569; line-height: 1.8; font-size: 15px; background: #f8fafc; border-radius: 8px; margin-top: 20px; }
+        label { display: block; margin-top: 15px; font-weight: bold; color: #64748b; font-size: 12px; }
+        input { width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; }
+        button.calc-btn { width: 100%; background: #2563eb; color: white; border: none; padding: 15px; border-radius: 6px; cursor: pointer; font-weight: bold; margin-top: 20px; }
+        .result { margin-top: 20px; padding: 15px; background: #f0f9ff; border-radius: 8px; text-align: center; color: #1e40af; font-size: 1.3em; font-weight: 800; }
+        .article-section { padding: 20px; color: #475569; line-height: 1.7; font-size: 15px; background: #f8fafc; border-radius: 8px; margin-top: 20px; }
         .youtube-section { background: #450a0a; border: 2px solid #ef4444; padding: 25px; border-radius: 12px; text-align: center; margin-top: 20px; }
-        .yt-btn { background: #ff0000; color: white; padding: 12px 25px; border-radius: 30px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 15px; transition: 0.3s; }
-        .yt-btn:hover { background: #cc0000; transform: scale(1.05); }
+        .yt-btn { background: #ff0000; color: white; padding: 12px 25px; border-radius: 30px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 15px; }
         footer { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #334155; font-size: 13px; color: #94a3b8; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="header">
+    <div style="text-align: center; margin-bottom: 30px;">
         <h1>Smart Finance Hub</h1>
-        <p>Professional Financial Tools for USA Home & Auto Loans</p>
+        <p>Professional Calculators for House, Car & Savings in USA</p>
     </div>
 
     <div class="nav-menu">
-        <button class="nav-btn" onclick="document.getElementById('mortgage-calc').scrollIntoView()">🏠 Mortgage</button>
-        <button class="nav-btn" onclick="document.getElementById('auto-calc').scrollIntoView()">🚗 Auto Loan</button>
-        <button class="nav-btn" onclick="alert('Privacy Policy:\n- We do not store or sell your personal financial data.\n- All calculations are done in your browser.\n- We use Google AdSense for monetization.')">🛡️ Privacy</button>
-        <button class="nav-btn" onclick="alert('Disclaimer:\n- This calculator is for informational purposes only.\n- Results are estimates and may vary by lender.\n- Consult a professional advisor before signing any loan.')">⚠️ Disclaimer</button>
+        <button class="nav-btn" onclick="document.getElementById('mortgage').scrollIntoView()">🏠 House/Mortgage</button>
+        <button class="nav-btn" onclick="document.getElementById('auto').scrollIntoView()">🚗 Auto/Car Loan</button>
+        <button class="nav-btn" onclick="document.getElementById('savings').scrollIntoView()">💰 Savings</button>
+        <button class="nav-btn" onclick="alert('About Us:\nSmart Finance Hub provides high-quality tools to help US users calculate monthly loan burdens and savings growth.')">ℹ️ About Us</button>
+        <button class="nav-btn" onclick="alert('Contact Us:\nEmail: Sultanprince025@gmail.com\nFeel free to reach out for any help.')">📧 Contact</button>
+        <button class="nav-btn" onclick="alert('Privacy Policy:\nWe do not store your data. All calculations are private.')">🛡️ Privacy</button>
+        <button class="nav-btn" onclick="alert('Disclaimer:\nResults are estimates for info only. Consult a lender for final rates.')">⚠️ Disclaimer</button>
     </div>
 
-    <div id="mortgage-calc" class="card">
-        <h2>US Mortgage Calculator</h2>
-        <label>HOME PRICE ($)</label>
-        <input type="number" id="home-price" value="350000">
-        <label>DOWN PAYMENT ($)</label>
-        <input type="number" id="down-payment" value="70000">
-        <label>INTEREST RATE (%)</label>
-        <input type="number" id="interest" value="6.8" step="0.1">
-        <button class="calc-btn" onclick="calcMortgage()">Calculate Monthly Payment</button>
-        <div id="m-result" class="result">Estimated Payment: $1,825.29</div>
-        
-        <div class="info-section">
-            <h3>Understanding US Mortgage Payments in 2026</h3>
-            <p>Planning a home purchase in the United States requires a clear understanding of your debt-to-income ratio. This tool helps you break down the principal and interest amounts based on current market trends. By providing a substantial down payment, typically 20%, home buyers can avoid extra costs like Private Mortgage Insurance (PMI), making their monthly housing costs more affordable in the long run.</p>
+    <div id="mortgage" class="card">
+        <h2>House & Mortgage Calculator</h2>
+        <label>HOUSE PRICE ($)</label><input type="number" id="h-price" value="400000">
+        <label>DOWN PAYMENT ($)</label><input type="number" id="h-down" value="80000">
+        <label>INTEREST (%)</label><input type="number" id="h-int" value="6.5" step="0.1">
+        <label>TERM (Years)</label><input type="number" id="h-years" value="30">
+        <button class="calc-btn" onclick="calcHouse()">Calculate Payment</button>
+        <div id="h-res" class="result">Monthly Payment: $2,022.62</div>
+        <div class="article-section">
+            <h3>US Mortgage Planning</h3>
+            <p>Buying a house in the USA requires understanding your monthly principal and interest. This tool helps you plan your homeownership journey and see how down payments reduce your debt.</p>
         </div>
     </div>
 
-    <div id="auto-calc" class="card">
-        <h2>USA Auto Loan Calculator</h2>
-        <label>VEHICLE PRICE ($)</label>
-        <input type="number" id="car-price" value="25000">
-        <label>LOAN TERM (Months)</label>
-        <input type="number" id="term" value="60">
-        <label>INTEREST RATE (%)</label>
-        <input type="number" id="auto-interest" value="4.5" step="0.1">
-        <button class="calc-btn" onclick="calcAuto()">Calculate Monthly Payment</button>
-        <div id="a-result" class="result">Monthly Payment: $466.08</div>
+    <div id="auto" class="card">
+        <h2>Auto & Car Loan Calculator</h2>
+        <label>VEHICLE PRICE ($)</label><input type="number" id="c-price" value="30000">
+        <label>TERM (Months)</label><input type="number" id="c-term" value="60">
+        <label>INTEREST (%)</label><input type="number" id="c-int" value="5.0" step="0.1">
+        <button class="calc-btn" onclick="calcCar()">Calculate Payment</button>
+        <div id="c-res" class="result">Monthly Payment: $566.14</div>
+        <div class="article-section">
+            <h3>Car Financing in USA</h3>
+            <p>Compare different loan terms to find an affordable monthly budget for your next car. Interest rates vary by credit score, so use this tool to estimate your total costs.</p>
+        </div>
+    </div>
 
-        <div class="info-section">
-            <h3>Financing Your Next Vehicle in the USA</h3>
-            <p>Whether buying new or used, auto loan interest rates play a massive role in your total cost of ownership. It is recommended to compare APR offers from different banks and credit unions before visiting a dealership. Our calculator ensures you stay within your monthly budget by providing a precise estimate of your fixed monthly installments.</p>
+    <div id="savings" class="card">
+        <h2>Savings Goal Calculator</h2>
+        <label>INITIAL DEPOSIT ($)</label><input type="number" id="s-init" value="1000">
+        <label>MONTHLY ADDITION ($)</label><input type="number" id="s-mon" value="200">
+        <label>YEARS</label><input type="number" id="s-years" value="10">
+        <label>ANNUAL RETURN (%)</label><input type="number" id="s-rate" value="8">
+        <button class="calc-btn" onclick="calcSavings()">Calculate Future Value</button>
+        <div id="s-res" class="result">Total Wealth: $38,542.48</div>
+        <div class="article-section">
+            <h3>The Power of Savings</h3>
+            <p>Small monthly contributions can grow into a large nest egg through compound interest in the USA. Start early to maximize your financial growth and security.</p>
         </div>
     </div>
 
     <div class="youtube-section">
-        <h3>Noor Al Quloob</h3>
-        <p>Experience peaceful Quran Tilawat and spiritual healing on our official channel. Join our community of over 1.1 million viewers for daily inspiration.</p>
-        <a href="https://youtube.com/@nooralquloob-1.1mviews?si=feA8A1XZui_oErYe" target="_blank" class="yt-btn">▶ Watch on YouTube</a>
+        <h3>Noor Al Quloob Official</h3>
+        <p>Join 1.1M viewers for peaceful Quran Tilawat.</p>
+        <a href="https://youtube.com/@nooralquloob-1.1mviews?si=R23rk95QqEHqcawI" target="_blank" class="yt-btn">▶ Watch on YouTube</a>
     </div>
 
     <footer>
-        <p>&copy; 2026 Smart Finance Hub | Developed by Sultan Prince Official</p>
-        <p>For inquiries: Sultanprince025@gmail.com</p>
+        <p>About Us | Contact: Sultanprince025@gmail.com | Privacy | Disclaimer</p>
+        <p>&copy; 2026 Smart Finance Hub | Sultan Prince Official</p>
     </footer>
 </div>
 
 <script>
-    function calcMortgage() {
-        let p = document.getElementById('home-price').value - document.getElementById('down-payment').value;
-        let r = (document.getElementById('interest').value / 100) / 12;
-        let n = 30 * 12;
-        if (r === 0) { m = p / n; } else {
-            var m = p * r * Math.pow(1+r, n) / (Math.pow(1+r, n) - 1);
-        }
-        document.getElementById('m-result').innerText = "Estimated Payment: $" + m.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    function calcHouse() {
+        let p = document.getElementById('h-price').value - document.getElementById('h-down').value;
+        let r = (document.getElementById('h-int').value / 100) / 12;
+        let n = document.getElementById('h-years').value * 12;
+        let m = p * r * Math.pow(1+r, n) / (Math.pow(1+r, n) - 1);
+        document.getElementById('h-res').innerText = "Monthly Payment: $" + m.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
     }
-
-    function calcAuto() {
-        let p = document.getElementById('car-price').value;
-        let r = (document.getElementById('auto-interest').value / 100) / 12;
-        let n = document.getElementById('term').value;
-        if (r === 0) { m = p / n; } else {
-            var m = p * r * Math.pow(1+r, n) / (Math.pow(1+r, n) - 1);
-        }
-        document.getElementById('a-result').innerText = "Monthly Payment: $" + m.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    function calcCar() {
+        let p = document.getElementById('c-price').value;
+        let r = (document.getElementById('c-int').value / 100) / 12;
+        let n = document.getElementById('c-term').value;
+        let m = p * r * Math.pow(1+r, n) / (Math.pow(1+r, n) - 1);
+        document.getElementById('c-res').innerText = "Monthly Payment: $" + m.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    }
+    function calcSavings() {
+        let p = parseFloat(document.getElementById('s-init').value);
+        let d = parseFloat(document.getElementById('s-mon').value);
+        let t = parseFloat(document.getElementById('s-years').value);
+        let r = (parseFloat(document.getElementById('s-rate').value) / 100) / 12;
+        let n = t * 12;
+        let f = p * Math.pow(1 + r, n) + d * ((Math.pow(1 + r, n) - 1) / r);
+        document.getElementById('s-res').innerText = "Total Savings: $" + f.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
     }
 </script>
 
