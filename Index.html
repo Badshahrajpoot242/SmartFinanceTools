@@ -3,156 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Finance Hub | Professional US Mortgage & Loan Tools</title>
-    
-    <meta name="google-site-verification" content="uc98LBtuZpJjE47gKYpBumHhySQ1XrLanGCmvpxrfY0" />
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3217285271843635" crossorigin="anonymous"></script>
-        <meta property="og:title" content="Smart Finance Hub | Best Mortgage & Loan Tools">
-    <meta property="og:description" content="Calculate your US Mortgage, Auto Loan, and Savings goals with our professional tools. Managed by Sultan Prince Official.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=500">
-    <meta property="og:url" content="https://smartfinancetoolss.netlify.app/">
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2845/2845812.png">
-
-
+    <title>Smart Finance Hub - US Mortgage & Auto Loan Calculators</title>
     <style>
-        :root { --primary: #1a56db; --dark: #111827; --light: #f9fafb; --yt-gold: #c5a059; }
-        body { font-family: 'Segoe UI', Roboto, sans-serif; background-color: var(--light); margin: 0; color: #374151; scroll-behavior: smooth; }
-        header { background: var(--dark); color: white; padding: 50px 20px; text-align: center; }
-        .nav-tabs { display: flex; justify-content: center; gap: 8px; margin-top: -30px; margin-bottom: 30px; flex-wrap: wrap; padding: 0 10px; }
-        .tab-btn { background: white; border: 1px solid #e5e7eb; padding: 12px 20px; border-radius: 50px; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.05); font-size: 0.9rem; font-weight: 600; }
-        .tab-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-        .card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); margin-bottom: 20px; display: none; }
-        .card.active { display: block; animation: fadeIn 0.5s; }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        .input-group { margin-bottom: 15px; }
-        label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.85rem; color: #4b5563; text-transform: uppercase; }
-        input { width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 8px; box-sizing: border-box; background: #f9fafb; font-size: 1rem; }
-        button.calc-btn { width: 100%; background: var(--primary); color: white; padding: 15px; border: none; border-radius: 8px; font-weight: bold; margin-top: 10px; cursor: pointer; transition: 0.3s; }
-        button.calc-btn:hover { background: #1e429f; transform: translateY(-1px); }
-        .result-display { margin-top: 25px; padding: 20px; background: #f0f9ff; border-radius: 12px; text-align: center; border: 1px solid #bae6fd; }
-        .result-display h3 { margin: 5px 0 0 0; color: var(--primary); font-size: 2.2rem; }
-        .quran-promo { background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1584281723573-f925186b514c?auto=format&fit=crop&q=80&w=1000'); background-size: cover; color: white; padding: 45px 20px; border-radius: 24px; text-align: center; margin: 40px 0; border: 2px solid var(--yt-gold); }
-        .quran-promo h2 { color: var(--yt-gold); margin-top: 0; font-size: 1.8rem; }
-        .yt-link { display: inline-block; background: #ff0000; color: white; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 20px; transition: 0.3s; box-shadow: 0 4px 15px rgba(255,0,0,0.3); }
-        .yt-link:hover { transform: scale(1.05); background: #cc0000; }
-        footer { background: var(--dark); color: #94a3b8; padding: 60px 20px; text-align: center; margin-top: 60px; }
-        .footer-links { margin-bottom: 25px; }
-        .footer-links a { color: #f3f4f6; margin: 0 12px; text-decoration: none; font-size: 0.9rem; cursor: pointer; transition: 0.3s; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; color: white; margin: 0; padding: 20px; scroll-behavior: smooth; }
+        .container { max-width: 850px; margin: auto; background: #1e293b; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .header { text-align: center; margin-bottom: 30px; }
+        .nav-menu { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 30px; }
+        .nav-btn { background: #334155; color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; transition: 0.3s; font-size: 14px; font-weight: 600; }
+        .nav-btn:hover { background: #2563eb; transform: translateY(-2px); }
+        .card { background: white; color: #333; padding: 25px; border-radius: 12px; margin-bottom: 30px; border-left: 5px solid #2563eb; }
+        h2 { color: #1e293b; margin-top: 0; }
+        label { display: block; margin-top: 15px; font-weight: bold; font-size: 12px; color: #64748b; }
+        input { width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; font-size: 16px; }
+        button.calc-btn { width: 100%; background: #2563eb; color: white; border: none; padding: 15px; border-radius: 6px; cursor: pointer; font-weight: bold; margin-top: 20px; transition: 0.2s; }
+        button.calc-btn:hover { background: #1d4ed8; }
+        .result { margin-top: 20px; padding: 20px; background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; text-align: center; color: #1e40af; font-size: 1.4em; font-weight: 800; }
+        .info-section { padding: 20px; color: #475569; line-height: 1.8; font-size: 15px; background: #f8fafc; border-radius: 8px; margin-top: 20px; }
+        .youtube-section { background: #450a0a; border: 2px solid #ef4444; padding: 25px; border-radius: 12px; text-align: center; margin-top: 20px; }
+        .yt-btn { background: #ff0000; color: white; padding: 12px 25px; border-radius: 30px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 15px; transition: 0.3s; }
+        .yt-btn:hover { background: #cc0000; transform: scale(1.05); }
+        footer { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #334155; font-size: 13px; color: #94a3b8; }
     </style>
 </head>
 <body>
-    <header>
+
+<div class="container">
+    <div class="header">
         <h1>Smart Finance Hub</h1>
-        <p>Professional Calculators for Home, Auto & Savings</p>
-    </header>
+        <p>Professional Financial Tools for USA Home & Auto Loans</p>
+    </div>
 
-    <div class="container">
-        <div class="nav-tabs">
-            <button class="tab-btn active" onclick="showSection('mortgage', this)">🏠 Mortgage</button>
-            <button class="tab-btn" onclick="showSection('auto', this)">🚗 Auto Loan</button>
-            <button class="tab-btn" onclick="showSection('savings', this)">💰 Savings</button>
-            <button class="tab-btn" onclick="showSection('about', this)">ℹ️ About</button>
-            <button class="tab-btn" onclick="showSection('privacy', this)">📜 Privacy</button>
-            <button class="tab-btn" onclick="showSection('disclaimer', this)">⚠️ Disclaimer</button>
-        </div>
+    <div class="nav-menu">
+        <button class="nav-btn" onclick="document.getElementById('mortgage-calc').scrollIntoView()">🏠 Mortgage</button>
+        <button class="nav-btn" onclick="document.getElementById('auto-calc').scrollIntoView()">🚗 Auto Loan</button>
+        <button class="nav-btn" onclick="alert('Privacy Policy:\n- We do not store or sell your personal financial data.\n- All calculations are done in your browser.\n- We use Google AdSense for monetization.')">🛡️ Privacy</button>
+        <button class="nav-btn" onclick="alert('Disclaimer:\n- This calculator is for informational purposes only.\n- Results are estimates and may vary by lender.\n- Consult a professional advisor before signing any loan.')">⚠️ Disclaimer</button>
+    </div>
 
-        <div id="mortgage" class="card active">
-            <h2>US Mortgage Calculator</h2>
-            <div class="input-group"><label>Home Price ($)</label><input type="number" id="m_price" value="350000"></div>
-            <div class="input-group"><label>Down Payment ($)</label><input type="number" id="m_down" value="70000"></div>
-            <div class="input-group"><label>Interest Rate (%)</label><input type="number" id="m_rate" value="6.8" step="0.1"></div>
-            <button class="calc-btn" onclick="calcMortgage()">Calculate Monthly Payment</button>
-            <div class="result-display" id="m_res">Estimated Payment: <h3 id="m_val">$1,825.29</h3></div>
-        </div>
-
-        <div id="auto" class="card">
-            <h2>Auto Loan Calculator</h2>
-            <div class="input-group"><label>Vehicle Price ($)</label><input type="number" id="a_price" placeholder="e.g. 30000"></div>
-            <div class="input-group"><label>Loan Term (Years)</label><input type="number" id="a_term" placeholder="e.g. 5"></div>
-            <div class="input-group"><label>Interest Rate (%)</label><input type="number" id="a_rate" placeholder="e.g. 5.5" step="0.1"></div>
-            <button class="calc-btn" onclick="calcAuto()">Calculate Monthly Payment</button>
-            <div class="result-display" id="a_res">Result will show here</div>
-        </div>
-
-        <div id="savings" class="card">
-            <h2>Savings Goal Calculator</h2>
-            <div class="input-group"><label>Target Amount ($)</label><input type="number" id="s_goal" placeholder="e.g. 15000"></div>
-            <div class="input-group"><label>Months to Save</label><input type="number" id="s_months" placeholder="e.g. 24"></div>
-            <button class="calc-btn" onclick="calcSavings()">Calculate Monthly Goal</button>
-            <div class="result-display" id="s_res">Result will show here</div>
-        </div>
-
-        <div id="about" class="card">
-            <h2>About Smart Finance Hub</h2>
-            <p>Smart Finance Hub is a premier digital platform providing high-precision financial tools. Our calculators are designed specifically to help users in the US and global markets manage their mortgages, vehicle loans, and personal savings goals with ease.</p>
-            <p>Owned and managed by <strong>Sultan Prince Official</strong>, we combine technical excellence with user-friendly design to promote financial literacy across the globe.</p>
-        </div>
-
-        <div id="privacy" class="card">
-            <h2>Privacy & Data Security</h2>
-            <p>We take your privacy seriously. Smart Finance Hub is a client-side platform, meaning all your financial data stays on your device. We do not store, collect, or transmit any personal financial information entered into our calculators.</p>
-            <p>We use Google AdSense to show relevant advertisements, which may use cookies to enhance your browsing experience.</p>
-        </div>
-
-        <div id="disclaimer" class="card">
-            <h2>Financial Disclaimer</h2>
-            <p>The results provided by our calculators are estimates for informational purposes only. Actual rates and monthly payments may vary depending on your credit score, lender policies, and market conditions.</p>
-            <p>Always consult with a certified financial advisor or bank representative before making significant financial commitments.</p>
-        </div>
-
-        <div class="quran-promo">
-            <h2>Noor Al Quloob</h2>
-            <p>Beautiful Quran Tilawat for spiritual healing and peace of heart. Join our community of over 1.1M viewers.</p>
-            <a href="https://www.youtube.com/@NooralQuloob-1.1MViews" target="_blank" class="yt-link">Watch on YouTube</a>
+    <div id="mortgage-calc" class="card">
+        <h2>US Mortgage Calculator</h2>
+        <label>HOME PRICE ($)</label>
+        <input type="number" id="home-price" value="350000">
+        <label>DOWN PAYMENT ($)</label>
+        <input type="number" id="down-payment" value="70000">
+        <label>INTEREST RATE (%)</label>
+        <input type="number" id="interest" value="6.8" step="0.1">
+        <button class="calc-btn" onclick="calcMortgage()">Calculate Monthly Payment</button>
+        <div id="m-result" class="result">Estimated Payment: $1,825.29</div>
+        
+        <div class="info-section">
+            <h3>Understanding US Mortgage Payments in 2026</h3>
+            <p>Planning a home purchase in the United States requires a clear understanding of your debt-to-income ratio. This tool helps you break down the principal and interest amounts based on current market trends. By providing a substantial down payment, typically 20%, home buyers can avoid extra costs like Private Mortgage Insurance (PMI), making their monthly housing costs more affordable in the long run.</p>
         </div>
     </div>
 
-    <footer>
-        <div class="footer-links">
-            <a onclick="showSection('about')">About Us</a> | 
-            <a onclick="showSection('privacy')">Privacy Policy</a> | 
-            <a onclick="showSection('disclaimer')">Disclaimer</a>
+    <div id="auto-calc" class="card">
+        <h2>USA Auto Loan Calculator</h2>
+        <label>VEHICLE PRICE ($)</label>
+        <input type="number" id="car-price" value="25000">
+        <label>LOAN TERM (Months)</label>
+        <input type="number" id="term" value="60">
+        <label>INTEREST RATE (%)</label>
+        <input type="number" id="auto-interest" value="4.5" step="0.1">
+        <button class="calc-btn" onclick="calcAuto()">Calculate Monthly Payment</button>
+        <div id="a-result" class="result">Monthly Payment: $466.08</div>
+
+        <div class="info-section">
+            <h3>Financing Your Next Vehicle in the USA</h3>
+            <p>Whether buying new or used, auto loan interest rates play a massive role in your total cost of ownership. It is recommended to compare APR offers from different banks and credit unions before visiting a dealership. Our calculator ensures you stay within your monthly budget by providing a precise estimate of your fixed monthly installments.</p>
         </div>
-        <p>© 2026 Smart Finance Hub | Sultan Prince Official</p>
-        <p style="font-size: 0.8rem; opacity: 0.7;">Contact: Sultanprince025@gmail.com</p>
+    </div>
+
+    <div class="youtube-section">
+        <h3>Noor Al Quloob</h3>
+        <p>Experience peaceful Quran Tilawat and spiritual healing on our official channel. Join our community of over 1.1 million viewers for daily inspiration.</p>
+        <a href="https://youtube.com/@nooralquloob-1.1mviews?si=feA8A1XZui_oErYe" target="_blank" class="yt-btn">▶ Watch on YouTube</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Smart Finance Hub | Developed by Sultan Prince Official</p>
+        <p>For inquiries: Sultanprince025@gmail.com</p>
     </footer>
+</div>
 
-    <script>
-        function showSection(id, btn) {
-            document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
-            document.getElementById(id).classList.add('active');
-            if(btn) {
-                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-            }
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+<script>
+    function calcMortgage() {
+        let p = document.getElementById('home-price').value - document.getElementById('down-payment').value;
+        let r = (document.getElementById('interest').value / 100) / 12;
+        let n = 30 * 12;
+        if (r === 0) { m = p / n; } else {
+            var m = p * r * Math.pow(1+r, n) / (Math.pow(1+r, n) - 1);
         }
+        document.getElementById('m-result').innerText = "Estimated Payment: $" + m.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    }
 
-        function calcMortgage() {
-            const p = document.getElementById('m_price').value - document.getElementById('m_down').value;
-            const r = (document.getElementById('m_rate').value / 100) / 12;
-            const n = 360;
-            const pay = (p * r * Math.pow(1+r, n)) / (Math.pow(1+r, n) - 1);
-            document.getElementById('m_val').innerText = '$' + pay.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    function calcAuto() {
+        let p = document.getElementById('car-price').value;
+        let r = (document.getElementById('auto-interest').value / 100) / 12;
+        let n = document.getElementById('term').value;
+        if (r === 0) { m = p / n; } else {
+            var m = p * r * Math.pow(1+r, n) / (Math.pow(1+r, n) - 1);
         }
+        document.getElementById('a-result').innerText = "Monthly Payment: $" + m.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    }
+</script>
 
-        function calcAuto() {
-            const p = document.getElementById('a_price').value;
-            const r = (document.getElementById('a_rate').value / 100) / 12;
-            const n = document.getElementById('a_term').value * 12;
-            const pay = (p * r * Math.pow(1+r, n)) / (Math.pow(1+r, n) - 1);
-            document.getElementById('a_res').innerHTML = `Monthly Auto Payment: <h3>$${pay.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</h3>`;
-        }
-
-        function calcSavings() {
-            const g = document.getElementById('s_goal').value;
-            const m = document.getElementById('s_months').value;
-            const save = g / m;
-            document.getElementById('s_res').innerHTML = `You need to save: <h3>$${save.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})} / month</h3>`;
-        }
-    </script>
 </body>
 </html>
